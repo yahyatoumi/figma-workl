@@ -20,7 +20,7 @@
 </style>
 
 <body class="text-[#A1A5B7] bg-[#FAFAFA]">
-    <nav class="h-screen w-72 bg-[#FAFAFA] px-10 absolute left-0 top-0">
+    <nav class="h-screen w-72 bg-[#FAFAFA] px-10 fixed left-0 top-0">
         <div class="w-fit py-2 cursor-pointer">
             <svg width="150" height="58" viewBox="0 0 150 58" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -188,6 +188,18 @@
     </nav>
     <header
         class="w-[calc(100vw-12rem-18rem)] h-16 fixed top-0 ml-72 flex justify-end mr-96 items-center gap-8 px-12 bg-[#FAFAFA]">
+        <div class="flex">
+            <img class="w-8 rounded-full"
+                src="https://marketplace.canva.com/EAFcmQkyAxc/1/0/1600w/canva-black-simple-bold-professional-twitter-profile-picture-Hl6dYEi3OGQ.jpg"
+                alt="">
+                <img class="w-8 rounded-full relative right-3"
+                src="https://marketplace.canva.com/EAFcmQkyAxc/1/0/1600w/canva-black-simple-bold-professional-twitter-profile-picture-Hl6dYEi3OGQ.jpg"
+                alt="">
+                <img class="w-8 rounded-full relative right-6"
+                src="https://marketplace.canva.com/EAFcmQkyAxc/1/0/1600w/canva-black-simple-bold-professional-twitter-profile-picture-Hl6dYEi3OGQ.jpg"
+                alt="">
+                <div class="w-8 h-8 rounded-full bg-[#000000] text-white flex items-center justify-center text-xs relative right-9">+45</div>
+        </div>
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar"
             viewBox="0 0 16 16">
             <path
@@ -210,11 +222,10 @@
                 class="text-xs text-white font-bold bg-red-500 rounded-full w-4 h-4 text-center absolute -top-2 -right-2">
                 5</div>
         </div>
-
     </header>
     <!-- right side model -->
-    <div class="absolute right-0 top-0 w-48 h-screen rounded-l-[33px] border"></div>
-    <main class="w-[calc(100vw-12rem-18rem)] min-h-[calc(100vh-4rem)] bg-white h-48 mt-16 ml-72 mr-96 relative z-20">
+    <div class="fixed right-0 top-0 w-48 z-20 h-screen rounded-l-[33px] border bg-white"></div>
+    <main class="w-[calc(100vw-12rem-18rem)] min-h-[calc(100vh-4rem)] h-fit pb-6 bg-white h-48 mt-16 ml-72 mr-96 relative z-10">
         <ul class="absolute -top-12 z-10 flex gap-4 text-black">
             <li class="cursor-pointer h-12 rounded-t-2xl w-32 bg-white flex items-center justify-center border">
                 To-Do
@@ -289,8 +300,8 @@
                         </svg>
                     </div>
                 </div>
-                <div class="bg-yellow-400 w-full h-0.5"></div>
-                <div class="mt-2 border w-full p-4 rounded-md w-full shadow">
+                <div class="bg-yellow-400 w-full h-0.5 mb-6"></div>
+                <div class="mt-4 border w-full p-5 rounded-xl w-full shadow">
                     <div class="w-full flex justify-between items-center">
                         <span class="text-xs text-black bg-[#FAFAFA] px-2 py-1 rounded-xl">UI Design</span>
                         <div class="w-8 h-8 flex items-center justify-center rounded-md cursor-pointer">
@@ -304,25 +315,49 @@
                         </div>
                     </div>
                     <p class="text-black text-sm mt-2">Metting with Costumer</p>
-                    <span class="text-xs mt-1">Metting with Costumer Metting with Costumer Metting with Costumer Metting
-                        with Costumer Metting with Costumer</span>
-                    <div class="flex justify-between mt-2">
-                        <div>
-                            <!-- hereeeee -->
+                    <p class="text-xs mt-1 leading-5">Metting with Costumer Metting with Costumer Metting with Costumer Metting</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <div class="flex">
+                            <img class="w-8 rounded-full"
+                                src="https://marketplace.canva.com/EAFcmQkyAxc/1/0/1600w/canva-black-simple-bold-professional-twitter-profile-picture-Hl6dYEi3OGQ.jpg"
+                                alt="">
+                                <img class="w-8 rounded-full relative right-3"
+                                src="https://marketplace.canva.com/EAFcmQkyAxc/1/0/1600w/canva-black-simple-bold-professional-twitter-profile-picture-Hl6dYEi3OGQ.jpg"
+                                alt="">
+                                <img class="w-8 rounded-full relative right-6"
+                                src="https://marketplace.canva.com/EAFcmQkyAxc/1/0/1600w/canva-black-simple-bold-professional-twitter-profile-picture-Hl6dYEi3OGQ.jpg"
+                                alt="">
                         </div>
-                        <img class="w-10 rounded-full"
-                            src="https://marketplace.canva.com/EAFcmQkyAxc/1/0/1600w/canva-black-simple-bold-professional-twitter-profile-picture-Hl6dYEi3OGQ.jpg"
-                            alt="">
+                        <div class="flex gap-2">
+                            <div class="border px-2 py-1 rounded-md flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                                    <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                                    <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                                </svg>
+                                <span class="text-xs">2</span>
+                            </div>
+                            <div class="border px-2 py-1 rounded-md flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-text" viewBox="0 0 16 16">
+                                    <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                                    <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                                  </svg>
+                                <span class="text-xs">5</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
+                <div class="w-full">
+                    <button class="w-full bg-blue-400 text-white py-2 rounded-xl text-sm py-1 mt-4 hover:bg-blue-600">Create new target</button>
+                </div>
             </div>
-            <div class="min-w-[350px]">
+            <div class="w-[350px]">
                 <div class="flex justify-between items-center">
                     <div>
-                        <span class="text-black">Yet to start</span>
+                        <span class="text-black">In progress</span>
                         <span>5</span>
                     </div>
-                    <div class="bg-[#FAFAFA] w-8 h-8 flex items-center justify-center rounded-md cursor-pointer">
+                    <div class="w-8 h-8 flex items-center justify-center rounded-md cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-calendar2-plus" viewBox="0 0 16 16">
                             <path
@@ -332,15 +367,64 @@
                         </svg>
                     </div>
                 </div>
-                <div class="bg-blue-400 w-full h-0.5"></div>
+                <div class="bg-blue-400 w-full h-0.5 mb-6"></div>
+                <div class="mt-4 border w-full p-5 rounded-xl w-full shadow">
+                    <div class="w-full flex justify-between items-center">
+                        <span class="text-xs text-black bg-[#FAFAFA] px-2 py-1 rounded-xl">UI Design</span>
+                        <div class="w-8 h-8 flex items-center justify-center rounded-md cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-calendar2-plus" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" />
+                                <path
+                                    d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5zM8 8a.5.5 0 0 1 .5.5V10H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V11H6a.5.5 0 0 1 0-1h1.5V8.5A.5.5 0 0 1 8 8" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-black text-sm mt-2">Metting with Costumer</p>
+                    <p class="text-xs mt-1 leading-5">Metting with Costumer Metting with Costumer Metting with Costumer Metting</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <div class="flex">
+                            <img class="w-8 rounded-full"
+                                src="https://marketplace.canva.com/EAFcmQkyAxc/1/0/1600w/canva-black-simple-bold-professional-twitter-profile-picture-Hl6dYEi3OGQ.jpg"
+                                alt="">
+                                <img class="w-8 rounded-full relative right-3"
+                                src="https://marketplace.canva.com/EAFcmQkyAxc/1/0/1600w/canva-black-simple-bold-professional-twitter-profile-picture-Hl6dYEi3OGQ.jpg"
+                                alt="">
+                                <img class="w-8 rounded-full relative right-6"
+                                src="https://marketplace.canva.com/EAFcmQkyAxc/1/0/1600w/canva-black-simple-bold-professional-twitter-profile-picture-Hl6dYEi3OGQ.jpg"
+                                alt="">
+                        </div>
+                        <div class="flex gap-2">
+                            <div class="border px-2 py-1 rounded-md flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                                    <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                                    <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                                </svg>
+                                <span class="text-xs">2</span>
+                            </div>
+                            <div class="border px-2 py-1 rounded-md flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-text" viewBox="0 0 16 16">
+                                    <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                                    <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                                  </svg>
+                                <span class="text-xs">5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w-full">
+                    <button class="w-full bg-blue-400 text-white py-2 rounded-xl text-sm py-1 mt-4 hover:bg-blue-600">Create new target</button>
+                </div>
             </div>
-            <div class="min-w-[350px]">
+            <div class="w-[350px]">
                 <div class="flex justify-between items-center">
                     <div>
-                        <span class="text-black">Yet to start</span>
+                        <span class="text-black">Finished</span>
                         <span>5</span>
                     </div>
-                    <div class="bg-[#FAFAFA] w-8 h-8 flex items-center justify-center rounded-md cursor-pointer">
+                    <div class="w-8 h-8 flex items-center justify-center rounded-md cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-calendar2-plus" viewBox="0 0 16 16">
                             <path
@@ -350,7 +434,103 @@
                         </svg>
                     </div>
                 </div>
-                <div class="bg-green-400 w-full h-0.5"></div>
+                <div class="bg-green-400 w-full h-0.5 mb-6"></div>
+                <div class="mt-4 border w-full p-5 rounded-xl w-full shadow">
+                    <div class="w-full flex justify-between items-center">
+                        <span class="text-xs text-black bg-[#FAFAFA] px-2 py-1 rounded-xl">UI Design</span>
+                        <div class="w-8 h-8 flex items-center justify-center rounded-md cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-calendar2-plus" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" />
+                                <path
+                                    d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5zM8 8a.5.5 0 0 1 .5.5V10H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V11H6a.5.5 0 0 1 0-1h1.5V8.5A.5.5 0 0 1 8 8" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-black text-sm mt-2">Metting with Costumer</p>
+                    <p class="text-xs mt-1 leading-5">Metting with Costumer Metting with Costumer Metting with Costumer Metting</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <div class="flex">
+                            <img class="w-8 rounded-full"
+                                src="https://marketplace.canva.com/EAFcmQkyAxc/1/0/1600w/canva-black-simple-bold-professional-twitter-profile-picture-Hl6dYEi3OGQ.jpg"
+                                alt="">
+                                <img class="w-8 rounded-full relative right-3"
+                                src="https://marketplace.canva.com/EAFcmQkyAxc/1/0/1600w/canva-black-simple-bold-professional-twitter-profile-picture-Hl6dYEi3OGQ.jpg"
+                                alt="">
+                                <img class="w-8 rounded-full relative right-6"
+                                src="https://marketplace.canva.com/EAFcmQkyAxc/1/0/1600w/canva-black-simple-bold-professional-twitter-profile-picture-Hl6dYEi3OGQ.jpg"
+                                alt="">
+                        </div>
+                        <div class="flex gap-2">
+                            <div class="border px-2 py-1 rounded-md flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                                    <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                                    <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                                </svg>
+                                <span class="text-xs">2</span>
+                            </div>
+                            <div class="border px-2 py-1 rounded-md flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-text" viewBox="0 0 16 16">
+                                    <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                                    <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                                  </svg>
+                                <span class="text-xs">5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 border w-full p-5 rounded-xl w-full shadow">
+                    <div class="w-full flex justify-between items-center">
+                        <span class="text-xs text-black bg-[#FAFAFA] px-2 py-1 rounded-xl">UI Design</span>
+                        <div class="w-8 h-8 flex items-center justify-center rounded-md cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-calendar2-plus" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" />
+                                <path
+                                    d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5zM8 8a.5.5 0 0 1 .5.5V10H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V11H6a.5.5 0 0 1 0-1h1.5V8.5A.5.5 0 0 1 8 8" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-black text-sm mt-2">Metting with Costumer</p>
+                    <p class="text-xs mt-1 leading-5">Metting with Costumer Metting with Costumer Metting with Costumer Metting</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <div class="flex">
+                            <img class="w-8 rounded-full"
+                                src="https://marketplace.canva.com/EAFcmQkyAxc/1/0/1600w/canva-black-simple-bold-professional-twitter-profile-picture-Hl6dYEi3OGQ.jpg"
+                                alt="">
+                                <img class="w-8 rounded-full relative right-3"
+                                src="https://marketplace.canva.com/EAFcmQkyAxc/1/0/1600w/canva-black-simple-bold-professional-twitter-profile-picture-Hl6dYEi3OGQ.jpg"
+                                alt="">
+                                <img class="w-8 rounded-full relative right-6"
+                                src="https://marketplace.canva.com/EAFcmQkyAxc/1/0/1600w/canva-black-simple-bold-professional-twitter-profile-picture-Hl6dYEi3OGQ.jpg"
+                                alt="">
+                        </div>
+                        <div class="flex gap-2">
+                            <div class="border px-2 py-1 rounded-md flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                                    <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                                    <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                                </svg>
+                                <span class="text-xs">2</span>
+                            </div>
+                            <div class="border px-2 py-1 rounded-md flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-text" viewBox="0 0 16 16">
+                                    <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                                    <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                                  </svg>
+                                <span class="text-xs">5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="w-full">
+                    <button class="w-full bg-blue-400 text-white py-2 rounded-xl text-sm py-1 mt-4 hover:bg-blue-600">Create new target</button>
+                </div>
             </div>
         </div>
     </main>
